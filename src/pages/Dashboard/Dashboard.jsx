@@ -965,7 +965,7 @@ const Dashboard = () => {
 
     <>
       <div className="section-header">
-        <h2>Good Evening ! Nirmal</h2>
+        <h2>Good Evening ! Ajay</h2>
 
         <Button><MdOutlineWidgets /> Add Widget</Button>
       </div>

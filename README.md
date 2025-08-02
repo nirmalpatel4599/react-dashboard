@@ -14,7 +14,7 @@ A simple and responsive task management Dashboard built with **React**.
 
 React – Frontend framework
 
-HTML & CSS
+HTML & CSS (Bootstrap & SCSS)
 
 VS Code – Code editor
 
@@ -22,7 +22,7 @@ Figma – UI/UX design
 
 # Time taken
 
-Approximately 10 hours.
+Approximately 20 - 22 hours.
 
 # Any AI tools used (optional)
 
