@@ -1,0 +1,1041 @@
+@import '../../../public/css/commoncss.scss';
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 24px;
+
+    h2 {
+        font-size: 18px;
+        font-weight: 600;
+        color: $text_black;
+        margin-bottom: 0px;
+    }
+
+    button {
+        background-color: $white;
+        color: $text_black;
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        max-width: 116px;
+        max-height: 32px;
+        border-radius: 8px;
+        border: 1px solid $border_clr;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 20px;
+        width: 100%;
+        text-transform: capitalize;
+    }
+}
+
+.sml-info-tab-grps {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    overflow-x: auto;
+    margin-bottom: 24px;
+    scrollbar-width: none;
+
+    .sml-info-tab {
+        border: 1px solid $border_clr;
+        padding: 16px;
+        border-radius: 12px;
+        width: 100%;
+
+        .title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+
+            img {
+                max-width: 36px;
+                max-height: 36px;
+            }
+
+            h5 {
+                font-size: 14px;
+                font-weight: 600;
+                color: $text_black;
+                margin-bottom: 0px;
+            }
+        }
+
+        .info-grp {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            p {
+                font-size: 12px;
+                font-weight: 400;
+                color: $text_gray;
+                margin-bottom: 0px;
+                display: flex;
+                gap: 4px;
+                align-items: center;
+                text-wrap: nowrap;
+            }
+
+            span {
+                padding: 0px 3px;
+                border-radius: 100%;
+                max-width: 20px;
+                max-height: 15px;
+                font-size: 12px;
+                font-weight: 400;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .info-red {
+                span {
+                    background-color: $red_light;
+                    color: $text_red;
+                }
+            }
+
+            .info-yellow {
+                span {
+                    background-color: $yellow_light;
+                    color: $text_yellow;
+                }
+            }
+
+            .info-green {
+                span {
+                    background-color: $green_light;
+                    color: $text_green;
+                }
+            }
+
+            .info-purple {
+                span {
+                    background-color: $purple_light;
+                    color: $text_purple;
+                }
+            }
+        }
+    }
+}
+
+.dashboard-card {
+    border: 1px solid $border_clr;
+    padding: 12px;
+    border-radius: 16px;
+    max-height: 280px;
+    overflow: hidden;
+
+    .title-sec {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        justify-content: space-between;
+
+        h5 {
+            font-size: 14px;
+            font-weight: 600;
+            color: $text_black;
+            margin-bottom: 0px;
+        }
+
+        .action-sec {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+
+            .MuiFormControl-root {
+                margin: 0px;
+                max-height: 32px;
+                max-width: 166px;
+                background-color: #F2F4F6;
+                border-radius: 8px;
+
+                .MuiInputBase-root {
+                    max-height: 32px;
+                }
+
+                .MuiSelect-select {
+                    padding: 3.5px 32px 3.5px 12px;
+                    font-size: 12px;
+                }
+
+                .MuiOutlinedInput-notchedOutline {
+                    border: none;
+                }
+
+                .MuiFormLabel-root {
+                    font-size: 12px;
+                }
+            }
+
+            button {
+                padding: 6px;
+                min-width: auto;
+                color: $text_gray;
+
+                svg {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .MuiBox-root {
+
+        .MuiTabs-root {
+            min-height: 30px;
+
+            .MuiTabs-scroller {
+                max-height: 30px;
+
+                .MuiTabs-list {
+                    gap: 8px;
+
+                    button {
+                        padding: 0px;
+                        min-width: auto;
+                        min-height: auto;
+                        text-transform: capitalize;
+                        max-width: fit-content;
+                        width: 100%;
+
+                        &.Mui-selected {
+                            p {
+                                color: $thm_green;
+
+                                span {
+                                    background-color: $green_light;
+                                }
+                            }
+                        }
+
+                        p {
+                            margin-bottom: 0px;
+                            display: flex;
+                            gap: 4px;
+                            align-items: center;
+                            font-size: 12px;
+                            font-weight: 400;
+                            color: $text_black;
+
+                            span {
+                                background-color: $gray_clr;
+                                padding: 3px 4px;
+                                border-radius: 100%;
+                                width: 100%;
+                                max-width: 20px;
+                                max-height: 20px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center
+                            }
+                        }
+
+                        .MuiTouchRipple-root {
+                            display: none;
+                        }
+                    }
+                }
+
+                .MuiTabs-indicator {
+                    bottom: 0px;
+                    border-top-right-radius: 4px;
+                    border-top-left-radius: 4px;
+                }
+            }
+        }
+    }
+}
+
+
+
+.work-allocated {
+    margin-bottom: 24px;
+
+    .MuiBox-root {
+
+
+        [role="tabpanel"] {
+            .MuiBox-root {
+                padding: 16px 4px;
+                max-height: 212px;
+                overflow: auto;
+                scrollbar-width: thin;
+
+                .work-allocated-cards-grp {
+                    // display: grid;
+                    // grid-template-columns: repeat(3, 1fr);
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 16px;
+
+                    .work-allocated-card {
+                        border-radius: 8px;
+                        border: 1px solid $border_clr;
+                        padding: 12px;
+                        transition: all 0.5s ease;
+                        flex: 1 0 calc(33.333% - 11px);
+
+                        &:nth-last-child(2):nth-child(3n + 1) {
+                            flex: 1 0 calc(50% - 8px);
+                        }
+
+                        &:last-child:nth-child(3n + 2) {
+                            flex: 1 0 calc(50% - 8px);
+                        }
+
+                        .title {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: 8px;
+                            margin-bottom: 4px;
+
+                            .id {
+                                font-size: 12px;
+                                font-weight: 400;
+                                color: $text_gray;
+                                margin-bottom: 0px;
+                                display: flex;
+                                align-items: center;
+                                gap: 2px;
+
+                                svg {
+                                    font-size: 16px;
+                                    color: $text_red;
+                                }
+                            }
+
+                            .comment {
+                                font-size: 12px;
+                                font-weight: 400;
+                                color: $text_gray;
+                                margin-bottom: 0px;
+                                display: flex;
+                                align-items: center;
+                                gap: 2px;
+
+                                svg {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+
+                        h5 {
+                            font-size: 12px;
+                            font-weight: 500;
+                            color: $text_black;
+                            margin-bottom: 8px;
+                        }
+
+                        .date-time-admin {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: 8px;
+                            margin-bottom: 10px;
+
+                            .date-time {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                gap: 12px;
+
+                                p {
+                                    font-size: 12px;
+                                    font-weight: 500;
+                                    color: $text_gray;
+                                    margin-bottom: 0px;
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 2px;
+
+                                    svg {
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+
+                            .admin-profile {
+                                h5 {
+                                    font-size: 12px;
+                                    font-weight: 400;
+                                    color: $white;
+                                    background-color: $thm_green;
+                                    max-width: 20px;
+                                    max-height: 20px;
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 100%;
+                                    padding: 6px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+                            }
+                        }
+
+                        .status {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: 8px;
+
+                            .task-status {
+                                margin-bottom: 0px;
+                                display: flex;
+                                gap: 8px;
+                                align-items: center;
+                                font-size: 12px;
+                                font-weight: 400;
+
+                                svg {
+                                    font-size: 20px;
+                                    color: $text_black;
+                                    padding: 2px;
+                                    background-color: $gray_clr;
+                                    border-radius: 4px;
+                                }
+
+                                span {
+                                    color: $text_yellow;
+                                    padding: 2px 6px;
+                                    border: 1px solid $text_yellow;
+                                    border-radius: 6px;
+                                    background-color: $yellow_light;
+                                    max-height: 19px;
+                                    max-width: 60px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+                            }
+
+                            .task-module {
+                                margin-bottom: 0px;
+                                font-size: 12px;
+                                font-weight: 400;
+                                color: $text_black;
+                                display: flex;
+                                gap: 4px;
+                                align-items: center;
+                                padding: 0px 6px;
+                                border-radius: 8px;
+                                background-color: $gray_clr;
+
+                                svg {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+
+                        .name-action {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: 8px;
+                            margin-bottom: 16px;
+
+                            h5 {
+                                margin-bottom: 0px;
+                            }
+
+                            button {
+                                min-width: auto;
+                                max-width: 20px;
+                                max-height: 20px;
+                                padding: 2px;
+                                background-color: $gray_clr;
+                                border-radius: 4px;
+
+                                svg {
+                                    font-size: 16px;
+                                    color: $text_black;
+                                }
+                            }
+                        }
+
+                        .response-task-grp {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: 8px;
+
+                            .response-task {
+                                display: flex;
+                                align-items: center;
+                                gap: 8px;
+
+                                p {
+                                    font-size: 12px;
+                                    font-weight: 400;
+                                    color: $text_gray;
+                                    margin-bottom: 0px;
+
+                                    span {
+                                        color: $text_black;
+                                        padding: 0px 3px;
+                                    }
+                                }
+
+                                .vertical-line {
+                                    width: 1px;
+                                    height: 15px;
+                                    background-color: $border_clr;
+                                    border-radius: 1px;
+                                }
+                            }
+
+                            .admin-profile {
+                                h5 {
+                                    margin-bottom: 0px;
+                                    background-color: $thm_green;
+                                    color: $white;
+                                    max-width: 20px;
+                                    max-height: 20px;
+                                    border-radius: 100%;
+                                    font-size: 12px;
+                                    font-weight: 400;
+                                    padding: 3px 6px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    line-height: normal;
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            box-shadow: 0px 1px 3px 0px #0000001A;
+                        }
+                    }
+
+                    &.forms {
+                        grid-template-columns: repeat(4, 1fr);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.employees-wise-progress {
+    margin-bottom: 24px;
+    padding: 0px;
+
+    .title-sec {
+        padding: 12px 12px 0px 12px;
+    }
+
+    .MuiBox-root {
+
+        .MuiBox-root {
+            .MuiTabs-root {
+                padding: 0px 12px;
+            }
+        }
+
+        [role="tabpanel"] {
+            .MuiBox-root {
+                padding: 0px;
+
+                .MuiPaper-root {
+                    max-height: 212px;
+                    box-shadow: none;
+                    scrollbar-width: thin;
+
+                    table {
+                        thead {
+                            max-height: 39px;
+
+                            tr {
+                                max-height: 39px;
+
+                                th {
+                                    padding: 12px 12px;
+                                    font-size: 12px;
+                                    font-weight: 500;
+                                    color: $text_black;
+                                    max-height: 39px;
+                                    background-color: $gray_clr;
+                                    line-height: normal;
+                                }
+                            }
+                        }
+
+                        tbody {
+                            tr {
+                                td {
+                                    padding: 14px 12px;
+                                    font-size: 12px;
+                                    font-weight: 400;
+                                    color: $text_black;
+                                    max-height: 45px;
+                                    background-color: $white;
+                                    line-height: normal;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sml-cards {
+    margin-bottom: 24px;
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+
+    .dashboard-card {
+        padding: 0px;
+        height: 100%;
+        max-height: 280px;
+
+        .title-sec {
+            padding: 12px;
+            border-bottom: 1px solid $border_clr;
+
+            h5 {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+
+                span {
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: $text_black;
+                    background-color: $gray_clr;
+                    padding: 3px 4px;
+                    border-radius: 100%;
+                    max-width: 20px;
+                    max-height: 20px;
+                }
+            }
+        }
+
+        .personal-notes-main-box {
+            padding: 16px;
+
+            .notes {
+                display: flex;
+                gap: 12px;
+                align-items: start;
+                margin-bottom: 8px;
+                padding: 12px;
+
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+
+                .image {
+                    max-width: 24px;
+                    max-height: 24px;
+                    width: 100%;
+                }
+
+                .image1 {
+                    max-width: 24px;
+                    max-height: 24px;
+                    width: 100%;
+                }
+
+                .cont {
+                    h5 {
+                        font-size: 12px;
+                        font-weight: 500;
+                        color: $text_black;
+                        margin-bottom: 0px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                        font-weight: 400;
+                        color: $text_gray;
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+
+        &.action {
+            .title-sec {
+                padding: 12px;
+                border: none;
+            }
+
+            .MuiBox-root {
+                .MuiTabs-root {
+                    padding: 0px 12px 0px 12px;
+                }
+
+                [role="tabpanel"] {
+                    .MuiBox-root {
+                        padding: 0px;
+                        // max-height: 212px;
+                        max-height: 191px;
+
+                        .MuiStack-root {
+                            max-height: 212px;
+
+                            .css-yp0zfy-MuiChartsWrapper-root {
+                                max-height: 212px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .workflow-main-grp {
+            .work-allocated-cards-grp {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 16px;
+                padding: 16px;
+                max-height: 224px;
+                overflow: auto;
+                scrollbar-width: thin;
+
+                // &.forms {
+                //     grid-template-columns: repeat(2, 1fr);
+                // }
+
+                .work-allocated-card {
+                    border-radius: 8px;
+                    border: 1px solid $border_clr;
+                    padding: 12px;
+                    transition: all 0.5s ease;
+                    flex: 1 0 calc(33.333% - 1px);
+
+                    &:nth-last-child(2):nth-child(3n + 1) {
+                        flex: 1 0 calc(50% - 8px);
+                    }
+
+                    &:last-child:nth-child(3n + 2) {
+                        flex: 1 0 calc(50% - 8px);
+                    }
+
+                    .title {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 8px;
+                        margin-bottom: 4px;
+
+                        .id {
+                            font-size: 12px;
+                            font-weight: 400;
+                            color: $text_gray;
+                            margin-bottom: 0px;
+                            display: flex;
+                            align-items: center;
+                            gap: 2px;
+
+                            svg {
+                                font-size: 16px;
+                                color: $text_red;
+                            }
+                        }
+
+                        .comment {
+                            font-size: 12px;
+                            font-weight: 400;
+                            color: $text_gray;
+                            margin-bottom: 0px;
+                            display: flex;
+                            align-items: center;
+                            gap: 2px;
+
+                            svg {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+
+                    h5 {
+                        font-size: 12px;
+                        font-weight: 500;
+                        color: $text_black;
+                        margin-bottom: 8px;
+                    }
+
+                    .date-time-admin {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 8px;
+                        margin-bottom: 10px;
+
+                        .date-time {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: 12px;
+
+                            p {
+                                font-size: 12px;
+                                font-weight: 500;
+                                color: $text_gray;
+                                margin-bottom: 0px;
+                                display: flex;
+                                align-items: center;
+                                gap: 2px;
+
+                                svg {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+
+                        .admin-profile {
+                            h5 {
+                                font-size: 12px;
+                                font-weight: 400;
+                                color: $white;
+                                background-color: $thm_green;
+                                max-width: 20px;
+                                max-height: 20px;
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 100%;
+                                padding: 6px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                        }
+                    }
+
+                    .status {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 8px;
+
+                        .task-status {
+                            margin-bottom: 0px;
+                            display: flex;
+                            gap: 8px;
+                            align-items: center;
+                            font-size: 12px;
+                            font-weight: 400;
+
+                            svg {
+                                font-size: 20px;
+                                color: $text_black;
+                                padding: 2px;
+                                background-color: $gray_clr;
+                                border-radius: 4px;
+                            }
+
+                            span {
+                                color: $text_yellow;
+                                padding: 2px 6px;
+                                border: 1px solid $text_yellow;
+                                border-radius: 6px;
+                                background-color: $yellow_light;
+                                max-height: 19px;
+                                max-width: 60px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                        }
+
+                        .task-module {
+                            margin-bottom: 0px;
+                            font-size: 12px;
+                            font-weight: 400;
+                            color: $text_black;
+                            display: flex;
+                            gap: 4px;
+                            align-items: center;
+                            padding: 0px 6px;
+                            border-radius: 8px;
+                            background-color: $gray_clr;
+
+                            svg {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+
+                    .name-action {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 8px;
+                        margin-bottom: 16px;
+
+                        h5 {
+                            margin-bottom: 0px;
+                        }
+
+                        button {
+                            min-width: auto;
+                            max-width: 20px;
+                            max-height: 20px;
+                            padding: 2px;
+                            background-color: $gray_clr;
+                            border-radius: 4px;
+
+                            svg {
+                                font-size: 16px;
+                                color: $text_black;
+                            }
+                        }
+                    }
+
+                    .response-task-grp {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 8px;
+
+                        .response-task {
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+
+                            p {
+                                font-size: 12px;
+                                font-weight: 400;
+                                color: $text_gray;
+                                margin-bottom: 0px;
+
+                                span {
+                                    color: $text_black;
+                                    padding: 0px 3px;
+                                }
+                            }
+
+                            .vertical-line {
+                                width: 1px;
+                                height: 15px;
+                                background-color: $border_clr;
+                                border-radius: 1px;
+                            }
+                        }
+
+                        .admin-profile {
+                            h5 {
+                                margin-bottom: 0px;
+                                background-color: $thm_green;
+                                color: $white;
+                                max-width: 20px;
+                                max-height: 20px;
+                                border-radius: 100%;
+                                font-size: 12px;
+                                font-weight: 400;
+                                padding: 3px 6px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                line-height: normal;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        box-shadow: 0px 1px 3px 0px #0000001A;
+                    }
+                }
+            }
+        }
+
+        .overdue-main-grp {
+            .MuiPaper-root {
+                max-height: 221px;
+                overflow: auto;
+                box-shadow: none;
+                scrollbar-width: thin;
+            }
+
+            table {
+                thead {
+                    max-height: 39px;
+
+                    tr {
+                        max-height: 39px;
+
+                        th {
+                            padding: 12px 12px;
+                            font-size: 12px;
+                            font-weight: 500;
+                            color: $text_black;
+                            max-height: 39px;
+                            background-color: $gray_clr;
+                            line-height: normal;
+                        }
+                    }
+                }
+
+                tbody {
+                    tr {
+                        td {
+                            padding: 12px 12px;
+                            font-size: 12px;
+                            font-weight: 400;
+                            color: $text_black;
+                            max-height: 45px;
+                            background-color: $white;
+                            line-height: normal;
+                            text-wrap: nowrap;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            max-width: 100%;
+
+                            span {
+                                padding: 2px 6px;
+                                border-radius: 6px;
+
+                                &.overdue {
+                                    color: $text_orange;
+                                    background-color: $red_light;
+                                    border: 1px solid $text_orange;
+
+                                }
+
+                                &.in-progress {
+                                    color: $text_yellow;
+                                    background-color: $yellow_light;
+                                    border: 1px solid $text_yellow;
+                                }
+
+                                &.complete {
+                                    color: $text_green;
+                                    background-color: $green_light;
+                                    border: 1px solid $text_green;
+                                }
+                            }
+
+                            button {
+                                min-width: auto;
+                                padding: 2px;
+                                background-color: $gray_clr;
+                                border-radius: 4px;
+
+                                svg {
+                                    font-size: 16px;
+                                    color: $text_black;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

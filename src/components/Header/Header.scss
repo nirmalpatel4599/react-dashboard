@@ -1,0 +1,209 @@
+@import '../../../public/css/commoncss.scss';
+
+header {
+    max-height: 56px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    justify-content: space-between;
+    border-bottom: 1px solid $border_clr;
+    position: relative; // for positioning the dropdown
+
+    .left-side {
+        width: 100%;
+        max-width: 176px;
+
+        img {
+            max-width: 86px;
+            max-height: 32px;
+        }
+    }
+
+    .hamburger-icon {
+        display: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .right-side {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .home-btn {
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 12px;
+            font-weight: 400;
+            color: $text_black;
+            max-height: fit-content;
+            padding: 0px;
+            min-width: auto;
+            text-transform: capitalize;
+
+            svg {
+                font-size: 20px;
+                color: $text_black;
+            }
+
+            .MuiTouchRipple-root {
+                display: none;
+            }
+        }
+
+        .sub-right {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
+            .ai-btn,
+            .notification-btn {
+                min-width: auto;
+                padding: 6px;
+                background-color: transparent;
+
+                svg {
+                    font-size: 20px;
+                    color: $text_black;
+                }
+
+                .MuiTouchRipple-root {
+                    display: none;
+                }
+            }
+
+            .MuiStack-root {
+                padding: 0px;
+                overflow: hidden;
+                background-color: $gray_clr;
+                border-radius: 8px;
+
+                .MuiFormControl-root {
+                    max-height: 32px;
+                    max-width: 141px;
+                    min-width: auto;
+
+                    .MuiFormLabel-root {
+                        transform: translate(14px, 5px) scale(1);
+                    }
+
+                    .MuiPickersSectionList-root {
+                        padding: 0px;
+
+                        span {
+                            font-size: 12px;
+                        }
+                    }
+
+                    .MuiInputAdornment-root {
+                        svg {
+                            max-width: 16px;
+                            max-height: 16px;
+                        }
+                    }
+
+                    .MuiPickersOutlinedInput-notchedOutline {
+                        border: none;
+                    }
+                }
+            }
+
+            .MuiFormControl-root {
+                margin: 0px;
+                max-height: 32px;
+                max-width: 166px;
+                background-color: $gray_clr;
+                border-radius: 8px;
+
+                .MuiInputBase-root {
+                    max-height: 32px;
+
+                    .MuiInputAdornment-root {
+                        svg {
+                            max-width: 16px;
+                            max-height: 16px;
+                        }
+                    }
+
+                    .MuiSelect-select {
+                        font-size: 12px;
+                    }
+
+                    .MuiOutlinedInput-notchedOutline {
+                        border: none;
+                    }
+                }
+            }
+
+            .vertical-line {
+                background-color: $border_clr;
+                width: 1px;
+                height: 32px;
+                border-radius: 16px;
+            }
+
+            .create-btn {
+                text-transform: capitalize;
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                padding: 6px 14px;
+                border-radius: 8px;
+                max-width: 87px;
+                max-height: 32px;
+                box-shadow: none;
+
+                .MuiTouchRipple-root {
+                    display: none;
+                }
+            }
+        }
+
+        &.open {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position: absolute;
+            top: 60px;
+            right: 12px;
+            background: white;
+            border: 1px solid $border_clr;
+            border-radius: 10px;
+            padding: 12px;
+            z-index: 10;
+            width: auto;
+            min-width: 200px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+            .home-btn {
+                width: 100%;
+                justify-content: flex-start;
+            }
+
+            .sub-right {
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+            }
+        }
+    }
+
+    // ✅ Media Queries
+    @media (max-width: 991px) {
+        .right-side {
+            display: none;
+        }
+
+        .hamburger-icon {
+            display: block;
+        }
+
+        .right-side.open {
+            display: flex;
+        }
+    }
+}

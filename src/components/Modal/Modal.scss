@@ -1,0 +1,36 @@
+@import '../../../public/css/commoncss.scss';
+
+.custom-modal {
+    .MuiBox-root {
+        padding: 0px;
+
+        .modal-header {
+            background-color: $thm_light;
+            border-bottom: 1px solid $border_clr;
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
+            padding: 16px;
+
+            h6 {
+                font-size: 16px;
+                font-weight: 500;
+                color: $text_black;
+                margin-bottom: 0px;
+            }
+
+            button {
+                padding: 0px;
+                max-width: 24px;
+                max-height: 24px;
+                padding: 4px;
+                background-color: $white;
+                border-radius: 100%;
+
+                svg {
+                    font-size: 16px;
+
+                }
+            }
+        }
+    }
+}
