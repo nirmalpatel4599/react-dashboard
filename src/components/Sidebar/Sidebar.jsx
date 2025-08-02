@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Sidebar.scss';
 import { Link, useLocation } from 'react-router-dom';
 import { FiHome, FiMessageSquare, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
@@ -13,14 +13,24 @@ import { MdOutlineInsertChart } from "react-icons/md";
 import { CiSettings } from "react-icons/ci";
 import { IoIosLogOut } from "react-icons/io";
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 const Sidebar = () => {
+  const isMobile = useMediaQuery('(max-width:991px)'); 
   const [collapsed, setCollapsed] = useState(false);
   const location = useLocation();
 
+  useEffect(() => {
+    setCollapsed(isMobile);
+  }, [isMobile]);
+
   const toggleSidebar = () => {
-    setCollapsed(!collapsed);
+    setCollapsed(prev => !prev);
   };
+
+  // const toggleSidebar = () => {
+  //   setCollapsed(!collapsed);
+  // };
 
   return (
     <aside
@@ -58,7 +68,7 @@ const Sidebar = () => {
           </li>
           <li>
             <Link
-              to="/chat"
+              to="#"
               style={{
                 display: 'flex',
                 alignItems: 'center',

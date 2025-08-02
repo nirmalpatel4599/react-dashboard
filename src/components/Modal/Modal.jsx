@@ -43,19 +43,27 @@ const groups = [
       { name: 'Flavor Fiesta Grill' },
     ],
   },
-];
-
-// const style = {
-//   position: 'absolute',
-//   top: '50%',
-//   left: '50%',
-//   transform: 'translate(-50%, -50%)',
-//   width: 400,
-//   bgcolor: 'background.paper',
-//   border: '2px solid #000',
-//   boxShadow: 24,
-//   p: 4,
-// };
+  {
+    label: 'Savory Bites Bistro',
+    items: [
+      { name: 'Flavor Haven Cafe', hasExternalIcon: true },
+      { name: 'Gourmet Bites Bistro' },
+      { name: 'Savory Delights Diner' },
+      { name: 'Taste Buds Tavern' },
+    ],
+  },
+  {
+    label: 'Delicious Nibbles Bistro',
+    items: [
+      { name: 'Taste Oasis Cafe' },
+      { name: 'Epicurean Escape Bistro' },
+      { name: 'Delectable Eats Eatery' },
+      { name: 'Culinary Corner Pub' },
+      { name: 'Savory Haven Diner' },
+      { name: 'Flavor Fiesta Grill' },
+    ],
+  },
+]; 
 
 const styles = {
   modalContainer: {
@@ -86,7 +94,7 @@ const styles = {
     mb: 1.5,
     '& .MuiOutlinedInput-root': {
       borderRadius: '8px',
-    },
+    }, 
   },
   listItem: {
     borderRadius: '8px',
@@ -151,7 +159,8 @@ export default function TransitionsModal({ open, handleClose }) {
           </IconButton>
         </Box>
 
-        <TextField
+        <div className="modal-body">
+          <TextField
           placeholder="Search"
           variant="outlined"
           fullWidth
@@ -167,7 +176,7 @@ export default function TransitionsModal({ open, handleClose }) {
           }}
         />
 
-        <Box sx={{ maxHeight: '320px', overflowY: 'auto' }}>
+        <Box className="select-fields" sx={{ maxHeight: '320px', overflowY: 'auto' }}>
           {filteredGroups.map((group, gIdx) => (
             <Box key={gIdx} sx={{ mt: gIdx === 0 ? 1 : 2 }}>
               <ListItem disableGutters>
@@ -206,6 +215,7 @@ export default function TransitionsModal({ open, handleClose }) {
             </Box>
           ))}
         </Box>
+        </div>
       </Box>
       </Modal>
     </div>

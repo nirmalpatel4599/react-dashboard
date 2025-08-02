@@ -3,6 +3,7 @@
 .custom-modal {
     .MuiBox-root {
         padding: 0px;
+        scrollbar-width: thin;
 
         .modal-header {
             background-color: $thm_light;
@@ -29,6 +30,54 @@
                 svg {
                     font-size: 16px;
 
+                }
+            } 
+        }
+
+        .modal-body{
+            padding: 16px;
+
+            .MuiFormControl-root{
+                margin-bottom: 16px;
+                max-height: 32px;
+                background-color: $gray_clr;
+                border-radius: 8px;
+
+                .MuiInputBase-root{
+                    max-height: 32px;
+                    font-size: 12px;
+                    font-weight: 400;
+
+                    .MuiInputBase-input{
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                    }
+
+                    svg{
+                        font-size: 16px;
+                    }
+
+                    .MuiOutlinedInput-notchedOutline{
+                        display: none;
+                    }
+                }
+            }
+
+            .select-fields{
+                .MuiBox-root{
+                    margin-top: 0px;
+
+                    .MuiListItem-root{
+                        gap: 6px;
+                        .MuiListItemIcon-root{
+                            min-width: auto;
+                        }
+
+                        .MuiListItemText-root{
+                            min-width: auto;
+                            flex: none;
+                        }
+                    }
                 }
             }
         }

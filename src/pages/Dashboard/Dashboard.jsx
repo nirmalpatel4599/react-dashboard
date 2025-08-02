@@ -27,7 +27,12 @@ import Paper from '@mui/material/Paper';
 import ReactVirtualizedTable from '../../components/ReactVirtualizedTable/ReactVirtualizedTable';
 import { FaUserPlus } from "react-icons/fa6";
 import Round from '../../Images/circle.png';
+import Ai from '../../Images/ai-review.png';
+import Task from '../../Images/task.png';
+import Issue from '../../Images/issue.png';
+import Forms from '../../Images/form.png';
 import Check from '../../Images/check.png';
+// import useMediaQuery from '@mui/material/useMediaQuery';
 
 function content1 () {
   return (
@@ -607,14 +612,18 @@ function createData(name, code, population, size) {
 
 function content11 () {
 
+  // const isMobile = useMediaQuery('(max-width:575px)');
+
   const columns = [
     {
         label: 'Name',
         dataKey: 'Name',
+        // style: isMobile ? { width: '200px' } : {},
     },
     {
         label: 'Department',
         dataKey: 'Department',
+        // style: isMobile ? { width: '200px' } : {},
     },
     {
         label: 'Assigned',
@@ -973,7 +982,7 @@ const Dashboard = () => {
       <div className="sml-info-tab-grps">
         <div className="sml-info-tab">
           <div className="title">
-            <img src="" className='img-fluid' alt="Icon" />
+            <img src={Ai} className='img-fluid' alt="Icon" />
             <h5>22 Ai Review</h5>
           </div>
 
@@ -994,7 +1003,7 @@ const Dashboard = () => {
 
         <div className="sml-info-tab">
           <div className="title">
-            <img src="" className='img-fluid' alt="Icon" />
+            <img src={Task} className='img-fluid' alt="Icon" />
             <h5>22 Tasks</h5>
           </div>
 
@@ -1019,7 +1028,7 @@ const Dashboard = () => {
 
         <div className="sml-info-tab">
           <div className="title">
-            <img src="" className='img-fluid' alt="Icon" />
+            <img src={Issue} className='img-fluid' alt="Icon" />
             <h5>22 Issues</h5>
           </div>
 
@@ -1040,7 +1049,7 @@ const Dashboard = () => {
 
         <div className="sml-info-tab">
           <div className="title">
-            <img src="" className='img-fluid' alt="Icon" />
+            <img src={Forms} className='img-fluid' alt="Icon" />
             <h5>20 Forms</h5>
           </div>
 
@@ -1161,7 +1170,7 @@ const Dashboard = () => {
             </div>
           </div>
 
-          <div className="col-lg-6">
+          <div className="col-lg-6 mt-4 mt-lg-0">
             <div className="dashboard-card action">
               <div className="title-sec">
                 <h5>Department wise allocation</h5>
@@ -1196,7 +1205,7 @@ const Dashboard = () => {
             </div>
           </div>
 
-          <div className="col-lg-6">
+          <div className="col-lg-6 mt-4 mt-lg-0">
             <div className="dashboard-card">
               <div className="title-sec">
                 <h5>Workflows</h5>
@@ -1360,7 +1369,7 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-
+ 
 
       
     </>

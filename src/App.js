@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainLayout from './layout/MainLayout';
 import Dashboard from './pages/Dashboard/Dashboard';
-import Chat from './pages/Chat/Chat';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
@@ -51,8 +50,7 @@ const App = () => {
       <Router>
         <MainLayout>
           <Routes>
-            <Route path="/" element={<Dashboard />} />
-            <Route path="/chat" element={<Chat />} />
+            <Route path="/" element={<Dashboard />} /> 
           </Routes>
         </MainLayout>
       </Router>

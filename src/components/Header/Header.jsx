@@ -2,7 +2,7 @@ import React from 'react';
 import './Header.scss';
 import TransitionsModal from '../Modal/Modal';
 import Button from '@mui/material/Button';
-// import Logo from '../../Images/Logo.png';
+import Logo from '../../Images/Logo.png';
 import { FaPlus } from "react-icons/fa6";
 import { IoHomeOutline } from "react-icons/io5";
 import { FaBars, FaRobot } from 'react-icons/fa';
@@ -46,10 +46,10 @@ const Header = () => {
     <>
     <header>
       <div className="left-side">
-        <img src={""} className="img-fluid" alt="Logo" />
+        <img src={Logo} className="img-fluid" alt="Logo" />
       </div>
 
-        <div className="hamburger-icon" onClick={toggleMenu}>
+        <div className="hamburger-icon" onClick={toggleMenu}> 
           <FaBars />
         </div>
 

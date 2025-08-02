@@ -22,7 +22,7 @@ header {
 
     .hamburger-icon {
         display: none;
-        font-size: 24px;
+        font-size: 16px;
         cursor: pointer;
     }
 
@@ -204,6 +204,23 @@ header {
 
         .right-side.open {
             display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .sub-right{
+
+                button{
+                    padding-left: 0px;
+
+                    &:last-child{
+                        padding-left: 14px;
+                        max-width: 100%;
+                    }
+                }
+                .vertical-line{
+                    display: none; 
+                }
+            }
         }
     }
 }
